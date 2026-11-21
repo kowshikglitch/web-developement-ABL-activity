@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+
+        nav {
+            background-color: #003366;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .banner {
+            background: linear-gradient(to right, #0066cc, #00ccff);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .banner h1 {
+            font-size: 35px;
+        }
+
+        .about {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            margin: 15px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px gray;
+        }
+
+        .card h3 {
+            color: #003366;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .contact {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            .banner h1 {
+                font-size: 25px;
+            }
+
+            .card {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#departments">Departments</a>
+        <a href="#faculty">Faculty</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="banner" id="home">
+        <h1>WELCOME TO OUR COLLEGE</h1>
+        <h2>Knowledge | Education | Success</h2>
+        <p>Building a Bright Future Through Education</p>
+    </div>
+
+    <div class="about" id="about">
+        <h2>About Our College</h2>
+        <p>
+            Our college provides quality education and helps students
+            develop knowledge, skills and confidence.
+            We offer various courses with experienced faculty
+            and modern facilities.
+        </p>
+    </div>
+
+    <h2 style="text-align:center;" id="departments">
+        Our Departments
+    </h2>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>CSE</h3>
+            <p>Computer Science and Engineering</p>
+            <p>Course: B.Tech</p>
+        </div>
+
+        <div class="card">
+            <h3>ECE</h3>
+            <p>Electronics and Communication Engineering</p>
+            <p>Course: B.Tech</p>
+        </div>
+
+        <div class="card">
+            <h3>EEE</h3>
+            <p>Electrical and Electronics Engineering</p>
+            <p>Course: B.Tech</p>
+        </div>
+
+        <div class="card">
+            <h3>AI & DS</h3>
+            <p>Artificial Intelligence and Data Science</p>
+            <p>Course: B.Tech</p>
+        </div>
+
+    </div>
+
+    <h2 style="text-align:center;" id="faculty">
+        Faculty Profiles
+    </h2>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>Dr. Ravi Kumar</h3>
+            <p>Professor</p>
+            <p>Computer Science Department</p>
+        </div>
+
+        <div class="card">
+            <h3>Ms. Priya</h3>
+            <p>Assistant Professor</p>
+            <p>AI & DS Department</p>
+        </div>
+
+        <div class="card">
+            <h3>Mr. Rajesh</h3>
+            <p>Associate Professor</p>
+            <p>ECE Department</p>
+        </div>
+
+    </div>
+
+    <h2 style="text-align:center;" id="admissions">
+        Admission Procedure
+    </h2>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>Step 1</h3>
+            <p>Fill the application form.</p>
+        </div>
+
+        <div class="card">
+            <h3>Step 2</h3>
+            <p>Submit academic documents.</p>
+        </div>
+
+        <div class="card">
+            <h3>Step 3</h3>
+            <p>Complete the admission process.</p>
+        </div>
+
+    </div>
+
+    <h2 style="text-align:center;" id="facilities">
+        Campus Facilities
+    </h2>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>Library</h3>
+            <p>Books and digital learning resources.</p>
+        </div>
+
+        <div class="card">
+            <h3>Computer Lab</h3>
+            <p>Modern computer laboratory.</p>
+        </div>
+
+        <div class="card">
+            <h3>Sports</h3>
+            <p>Indoor and outdoor sports facilities.</p>
+        </div>
+
+        <div class="card">
+            <h3>Hostel</h3>
+            <p>Comfortable student accommodation.</p>
+        </div>
+
+    </div>
+
+    <h2 style="text-align:center;" id="events">
+        College Events
+    </h2>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>Annual Fest</h3>
+            <p>Cultural programs and celebrations.</p>
+        </div>
+
+        <div class="card">
+            <h3>Technical Fest</h3>
+            <p>Technical competitions and projects.</p>
+        </div>
+
+        <div class="card">
+            <h3>Sports Day</h3>
+            <p>Sports competitions for students.</p>
+        </div>
+
+    </div>
+
+    <div class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>College Name: ABC Engineering College</p>
+        <p>Address: Andhra Pradesh, India</p>
+        <p>Email: college@gmail.com</p>
+        <p>Phone: 9876543210</p>
+    </div>
+
+</body>
+</html>

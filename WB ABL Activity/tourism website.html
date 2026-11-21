@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tourism Website</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #f2f2f2;
+}
+
+nav {
+    background-color: #003366;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+.banner {
+    background: linear-gradient(to right, #0066cc, #00cc99);
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+h2 {
+    text-align: center;
+    color: #003366;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 8px gray;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.tips {
+    background-color: #d9f2e6;
+    padding: 20px;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width:600px) {
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .banner h1 {
+        font-size: 25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+<a href="#home">Home</a>
+<a href="#monuments">Monuments</a>
+<a href="#regions">Regions</a>
+<a href="#festivals">Festivals</a>
+<a href="#food">Food</a>
+<a href="#gallery">Gallery</a>
+<a href="#tips">Travel Tips</a>
+</nav>
+
+<!-- Banner -->
+<div class="banner" id="home">
+<h1>EXPLORE INDIA</h1>
+<h2 style="color:white;">Discover Beautiful India</h2>
+<p>Travel | Culture | History | Adventure</p>
+</div>
+
+<!-- Historical Monuments -->
+<h2 id="monuments">Historical Monuments</h2>
+
+<div class="container">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=400" alt="Taj Mahal">
+<h3>Taj Mahal</h3>
+<p>Agra, Uttar Pradesh</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=400" alt="Red Fort">
+<h3>Red Fort</h3>
+<p>Delhi, India</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?w=400" alt="Hampi">
+<h3>Hampi</h3>
+<p>Karnataka, India</p>
+</div>
+
+</div>
+
+<!-- Regions -->
+<h2 id="regions">Famous Destinations by Region</h2>
+
+<div class="container">
+
+<div class="card">
+<h3>North India</h3>
+<p>Delhi, Agra, Jaipur, Kashmir</p>
+</div>
+
+<div class="card">
+<h3>South India</h3>
+<p>Kerala, Chennai, Hampi, Hyderabad</p>
+</div>
+
+<div class="card">
+<h3>East India</h3>
+<p>Kolkata, Darjeeling, Odisha</p>
+</div>
+
+<div class="card">
+<h3>West India</h3>
+<p>Goa, Mumbai, Gujarat</p>
+</div>
+
+</div>
+
+<!-- Festivals -->
+<h2 id="festivals">Cultural Festivals</h2>
+
+<div class="container">
+
+<div class="card">
+<h3>Diwali</h3>
+<p>Festival of Lights</p>
+</div>
+
+<div class="card">
+<h3>Holi</h3>
+<p>Festival of Colours</p>
+</div>
+
+<div class="card">
+<h3>Pongal</h3>
+<p>Tamil Nadu Harvest Festival</p>
+</div>
+
+<div class="card">
+<h3>Onam</h3>
+<p>Kerala Cultural Festival</p>
+</div>
+
+</div>
+
+<!-- Local Cuisine -->
+<h2 id="food">Famous Indian Cuisine</h2>
+
+<div class="container">
+
+<div class="card">
+<h3>Biryani</h3>
+<p>Hyderabad</p>
+</div>
+
+<div class="card">
+<h3>Dosa</h3>
+<p>South India</p>
+</div>
+
+<div class="card">
+<h3>Dhabe Wala Food</h3>
+<p>Punjab</p>
+</div>
+
+<div class="card">
+<h3>Goan Fish Curry</h3>
+<p>Goa</p>
+</div>
+
+</div>
+
+<!-- Gallery -->
+<h2 id="gallery">Image Gallery</h2>
+
+<div class="container">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=400" alt="Indian monument">
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=400" alt="Beach">
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=400" alt="Mountain">
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1590050752117-23a9a3e3e4d1?w=400" alt="Indian culture">
+</div>
+
+</div>
+
+<!-- Travel Tips -->
+<div class="tips" id="tips">
+<h2>Travel Tips</h2>
+<ul>
+<li>Plan your trip before travelling.</li>
+<li>Carry water and necessary documents.</li>
+<li>Respect local culture and traditions.</li>
+<li>Keep your surroundings clean.</li>
+<li>Follow safety rules.</li>
+<li>Try local food and explore new places.</li>
+</ul>
+</div>
+
+</body>
+</html>
